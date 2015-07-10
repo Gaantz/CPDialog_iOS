@@ -14,6 +14,11 @@
 		404F40F51B4EDCE9009E1673 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404F40F41B4EDCE9009E1673 /* Images.xcassets */; };
 		404F40F81B4EDCE9009E1673 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 404F40F61B4EDCE9009E1673 /* LaunchScreen.xib */; };
 		404F41041B4EDCE9009E1673 /* SuraDialogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 404F41031B4EDCE9009E1673 /* SuraDialogTests.m */; };
+		404F411D1B4F33A5009E1673 /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404F411A1B4F33A5009E1673 /* MJPopupBackgroundView.m */; };
+		404F411E1B4F33A5009E1673 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404F411C1B4F33A5009E1673 /* UIViewController+MJPopupViewController.m */; };
+		40A668651B502C90008C6C09 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A668641B502C90008C6C09 /* QuartzCore.framework */; };
+		40A668681B502D57008C6C09 /* SuraDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A668671B502D57008C6C09 /* SuraDialog.m */; };
+		40E2C8491B50222B001525F7 /* iSuraDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E2C8481B50222B001525F7 /* iSuraDialog.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		404F40FD1B4EDCE9009E1673 /* SuraDialogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuraDialogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		404F41021B4EDCE9009E1673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		404F41031B4EDCE9009E1673 /* SuraDialogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuraDialogTests.m; sourceTree = "<group>"; };
+		404F41191B4F33A5009E1673 /* MJPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPopupBackgroundView.h; sourceTree = "<group>"; };
+		404F411A1B4F33A5009E1673 /* MJPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPopupBackgroundView.m; sourceTree = "<group>"; };
+		404F411B1B4F33A5009E1673 /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
+		404F411C1B4F33A5009E1673 /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
+		40A668641B502C90008C6C09 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		40A668661B502D57008C6C09 /* SuraDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuraDialog.h; sourceTree = "<group>"; };
+		40A668671B502D57008C6C09 /* SuraDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuraDialog.m; sourceTree = "<group>"; };
+		40E2C8481B50222B001525F7 /* iSuraDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iSuraDialog.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A668651B502C90008C6C09 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 		404F40DB1B4EDCE9009E1673 = {
 			isa = PBXGroup;
 			children = (
+				40A668641B502C90008C6C09 /* QuartzCore.framework */,
 				404F40E61B4EDCE9009E1673 /* SuraDialog */,
 				404F41001B4EDCE9009E1673 /* SuraDialogTests */,
 				404F40E51B4EDCE9009E1673 /* Products */,
@@ -81,13 +96,17 @@
 		404F40E61B4EDCE9009E1673 /* SuraDialog */ = {
 			isa = PBXGroup;
 			children = (
+				404F41181B4F3399009E1673 /* Utils */,
 				404F40EB1B4EDCE9009E1673 /* AppDelegate.h */,
 				404F40EC1B4EDCE9009E1673 /* AppDelegate.m */,
 				404F40EE1B4EDCE9009E1673 /* ViewController.h */,
 				404F40EF1B4EDCE9009E1673 /* ViewController.m */,
+				40A668661B502D57008C6C09 /* SuraDialog.h */,
+				40A668671B502D57008C6C09 /* SuraDialog.m */,
 				404F40F11B4EDCE9009E1673 /* Main.storyboard */,
-				404F40F41B4EDCE9009E1673 /* Images.xcassets */,
 				404F40F61B4EDCE9009E1673 /* LaunchScreen.xib */,
+				40E2C8481B50222B001525F7 /* iSuraDialog.xib */,
+				404F40F41B4EDCE9009E1673 /* Images.xcassets */,
 				404F40E71B4EDCE9009E1673 /* Supporting Files */,
 			);
 			path = SuraDialog;
@@ -117,6 +136,17 @@
 				404F41021B4EDCE9009E1673 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		404F41181B4F3399009E1673 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				404F41191B4F33A5009E1673 /* MJPopupBackgroundView.h */,
+				404F411A1B4F33A5009E1673 /* MJPopupBackgroundView.m */,
+				404F411B1B4F33A5009E1673 /* UIViewController+MJPopupViewController.h */,
+				404F411C1B4F33A5009E1673 /* UIViewController+MJPopupViewController.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E2C8491B50222B001525F7 /* iSuraDialog.xib in Resources */,
 				404F40F31B4EDCE9009E1673 /* Main.storyboard in Resources */,
 				404F40F81B4EDCE9009E1673 /* LaunchScreen.xib in Resources */,
 				404F40F51B4EDCE9009E1673 /* Images.xcassets in Resources */,
@@ -219,6 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				404F411D1B4F33A5009E1673 /* MJPopupBackgroundView.m in Sources */,
+				404F411E1B4F33A5009E1673 /* UIViewController+MJPopupViewController.m in Sources */,
+				40A668681B502D57008C6C09 /* SuraDialog.m in Sources */,
 				404F40F01B4EDCE9009E1673 /* ViewController.m in Sources */,
 				404F40ED1B4EDCE9009E1673 /* AppDelegate.m in Sources */,
 				404F40EA1B4EDCE9009E1673 /* main.m in Sources */,
@@ -418,6 +452,7 @@
 				404F41091B4EDCE9009E1673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		404F410A1B4EDCE9009E1673 /* Build configuration list for PBXNativeTarget "SuraDialogTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +461,7 @@
 				404F410C1B4EDCE9009E1673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
